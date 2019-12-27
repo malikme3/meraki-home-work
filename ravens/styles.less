@@ -1,0 +1,54 @@
+@width: 200px;
+@height: @width + 10px;
+@f-size: 30px;
+@color: red;
+
+#header {
+  color: @color;
+}
+
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px blue;
+}
+
+#main {
+  width: @width + 170;
+  font-size: @f-size;
+  color: chocolate;
+  background-color: cadetblue;
+  .bordered();
+}
+
+/** 
+with simple CSS
+
+#main .success {
+  height: 20px;
+  color: green;
+}
+
+#main .failure {
+  width: 350px;
+  color: @color;
+  font-size: @f-size;
+}
+
+**/
+
+/** 
+with simple LESS
+
+#main {
+  .success {
+    height: 20px;
+    color: green;
+  }
+  .failure {
+    width: 350px;
+    color: @color;
+    font-size: @f-size;
+  }
+}
+
+**/
