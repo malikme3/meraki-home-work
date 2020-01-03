@@ -1,0 +1,45 @@
+@batsman-color: red;
+@bowler-color: white;
+
+.batsman {
+  background-color: aqua;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 170%;
+  color: @batsman-color;
+}
+.runs {
+  background-color: black;
+  color: @batsman-color;
+}
+
+.bowler {
+  background-color: orange;
+  color: @bowler-color;
+}
+.wickets {
+  background-color: blue;
+  color: @bowler-color;
+}
+
+#scorecard {
+  .batsman();
+}
+
+// #t20 {
+//   color: black;
+// }
+// #t20 .batsman {
+//   font-size: 12px;
+// }
+// #t20 .bowler {
+//   width: 300px;
+// }
+
+#t20 {
+  .batsman {
+    font-size: 20px;
+  }
+  .bowler {
+    width: 400px;
+  }
+}
