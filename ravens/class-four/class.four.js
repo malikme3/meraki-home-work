@@ -3,8 +3,13 @@ function changeColor(newColor) {
   elem.style.color = newColor;
 }
 
-function testLogs() {
+function testLog() {
   console.log(23);
   console.info('all is good , just info');
   console.warn('....2020, trump is winning !');
+}
+
+function test() {
+  alert('56');
+  
 }
